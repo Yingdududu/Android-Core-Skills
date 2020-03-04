@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs4720.cs.virginia.edu.coreskills.MainActivity">
+
+    <Button
+        android:text="GPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gpsButton"
+        android:onClick="openGPS" />
+
+    <Button
+        android:text="Shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpsButton"
+        android:layout_alignStart="@+id/gpsButton"
+        android:id="@+id/shakeButton"
+        android:onClick="openShake" />
+
+    <Button
+        android:text="SQLite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firebaseButton"
+        android:layout_alignEnd="@+id/firebaseButton"
+        android:id="@+id/sqliteButton"
+        android:onClick="openSQLite" />
+
+    <Button
+        android:text="Accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accelButton"
+        android:layout_below="@+id/shakeButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="openAccelerometer" />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cameraButton"
+        android:layout_below="@+id/accelButton"
+        android:layout_alignStart="@+id/shakeButton"
+        android:onClick="openCamera" />
+
+    <Button
+        android:text="Web Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webServiceButton"
+        android:layout_below="@+id/cameraButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="openWebService" />
+
+    <Button
+        android:text="Firebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firebaseButton"
+        android:layout_below="@+id/webServiceButton"
+        android:layout_alignStart="@+id/cameraButton"
+        android:onClick="openFirebase" />
+
+    <Button
+        android:text="SharedPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sharedPrefsButton"
+        android:layout_below="@+id/sqliteButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="openSharedPreferences" />
+
+    <TextView
+        android:text="Ying Du / yd3cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/studentOneTextView" />
+
+
+
+    <TextView
+        android:text="final-du"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/studentOneTextView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/teamTextView" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sqlite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cs4720.cs.virginia.edu.coreskills.SQLiteActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Sally Smith"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nameEditText"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="sss5s"
+        android:ems="10"
+        android:layout_below="@+id/nameEditText"
+        android:layout_alignStart="@+id/nameEditText"
+        android:id="@+id/compIDEditText"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Save to Database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compIDEditText"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveButton"
+        android:onClick="saveToDatabase"/>
+
+    <Button
+        android:text="Load from Database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/loadButton"
+        android:onClick="loadFromDatabase"/>
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loadButton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/nameTextView" />
+
+    <TextView
+        android:text="Computing ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/compIDTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
